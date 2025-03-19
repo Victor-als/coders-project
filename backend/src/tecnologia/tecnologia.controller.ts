@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-return */
 import { Controller, Get } from "@nestjs/common"
 import { Tecnologia } from "@core"
 import { TecnologiaPrisma } from "./tecnologia.prisma"
@@ -8,11 +9,11 @@ export class TecnologiaController {
 
 	@Get()
 	async obterTodas(): Promise<Tecnologia[]> {
-		return this.repo.obterTodas()
+		return await this.repo.obterTodas()
 	}
 
 	@Get("destaques")
 	async obterDestaques(): Promise<Tecnologia[]> {
-		return this.repo.obterDestaques()
+		return await this.repo.obterDestaques()
 	}
 }
