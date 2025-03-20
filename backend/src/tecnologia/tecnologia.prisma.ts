@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/require-await */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
-
 import { Tecnologia } from "@core"
 import { Injectable } from "@nestjs/common"
 import { PrismaProvider } from "src/db/prisma.provider"
@@ -11,11 +11,11 @@ export class TecnologiaPrisma {
 	constructor(private readonly prisma: PrismaProvider) {}
 
 	async obterTodas(): Promise<Tecnologia[]> {
-		return await this.prisma.tecnologia.findMany()
+		return this.prisma.tecnologia.findMany()
 	}
 
 	async obterDestaques(): Promise<Tecnologia[]> {
-		return await this.prisma.tecnologia.findMany({
+		return this.prisma.tecnologia.findMany({
 			where: {
 				destaque: true,
 			},
