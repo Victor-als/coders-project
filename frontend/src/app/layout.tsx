@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import ButtonChat from "@/components/chat/ButtonChat";
 
 const montSerrat = Montserrat({
   variable: "--font-montserrat",
@@ -21,8 +22,10 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body
         className={`${montSerrat.variable} antialiased`}
-      >
+      > 
+        <ButtonChat />
         {children}
+
       </body>
     </html>
   );
