@@ -1,6 +1,8 @@
 # 🧑‍💻 Portifolio coders
 
 <div align="center">
+
+ ![Image](https://github.com/user-attachments/assets/b5738cd4-ee30-4650-a0c4-f6513cb5cce6)
 <div data-badges>
   <img src="https://img.shields.io/badge/next.js-%23000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
     <img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS" />
